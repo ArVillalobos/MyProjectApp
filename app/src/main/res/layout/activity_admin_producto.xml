@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Caja de texto para el nombre del producto -->
+
+    <!-- Caja de texto para el precio del producto -->
+
+    <!-- Caja de texto para la cantidad del producto -->
+
+    <!-- Botón para regresar a la pantalla principal -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="378dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Nombre del Producto"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="378dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/etNombre"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Precio del Producto"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="381dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/etPrecio"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Cantidad del Producto"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCantidad"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="16dp"
+        android:text="Crear Producto" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar Producto"
+        android:layout_below="@id/btnCrear"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar Producto"
+        android:layout_below="@id/btnBorrar"/>
+</RelativeLayout>
